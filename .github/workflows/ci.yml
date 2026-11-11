@@ -1,0 +1,42 @@
+name: quality-and-promotion-gate
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      candidate_metrics_json:
+        description: JSON metrics produced by the full candidate evaluation
+        required: true
+        type: string
+      champion_metrics_json:
+        description: JSON metrics for the currently approved champion
+        required: true
+        type: string
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -e '.[dev]'
+      - run: pytest -q
+      - run: python -m evals.run --dataset evals/data/qa.jsonl
+  promotion-regression:
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: pip install -e '.[dev]'
+      - name: Write submitted evaluation metrics
+        env:
+          CANDIDATE_METRICS_JSON: ${{ inputs.candidate_metrics_json }}
+          CHAMPION_METRICS_JSON: ${{ inputs.champion_metrics_json }}
+        run: |
+          python -c "import json,os,pathlib; pathlib.Path('candidate.json').write_text(json.dumps(json.loads(os.environ['CANDIDATE_METRICS_JSON']))); pathlib.Path('champion.json').write_text(json.dumps(json.loads(os.environ['CHAMPION_METRICS_JSON'])))"
+      - name: Candidate and champion metric gate
+        run: python evals/ci_gate.py candidate.json champion.json

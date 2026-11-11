@@ -1,0 +1,9 @@
+{
+  "examples": 70,
+  "triage_json_validity": 1.0,
+  "triage_macro_f1": 0.7357679914070892,
+  "category_accuracy": 0.7857142857142857,
+  "priority_accuracy": 0.44285714285714284,
+  "product_area_accuracy": 0.6857142857142857,
+  "data_status": "Use only as evidence for the supplied manually reviewed evaluation set."
+}

@@ -1,0 +1,245 @@
+{
+  "examples": 20,
+  "answer_exact_support_rate": 0.75,
+  "expected_citation_rate": 0.7,
+  "joint_answer_and_citation_rate": 0.65,
+  "refusal_count": 3,
+  "http_error_count": 0,
+  "metric_note": "Exact normalized reference-answer match and expected document citation; fictional synthetic corpus, not human acceptance evidence.",
+  "per_example": [
+    {
+      "question": "If I need to modify an Accounts setting, where should I navigate?",
+      "expected_document_id": "accounts-configuration-02",
+      "http_status": 200,
+      "answer": "Atlas Cloud accounts supports teams that need predictable, auditable workflows.",
+      "refused": false,
+      "citations": [
+        "accounts-configuration-02"
+      ],
+      "answer_match": false,
+      "citation_match": true
+    },
+    {
+      "question": "Where in Atlas Cloud do the API configuration controls live?",
+      "expected_document_id": "api-configuration-02",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Api**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "api-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where is the Billing limits section reached from the console?",
+      "expected_document_id": "billing-limits-04",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Billing**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "billing-limits-04"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "How do I get to Admin's permission controls?",
+      "expected_document_id": "admin-permissions-05",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Admin**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "admin-permissions-05"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where can I go in Analytics to work through a problem?",
+      "expected_document_id": "analytics-troubleshooting-03",
+      "http_status": 200,
+      "answer": "I don't have enough information in the available documentation to answer that.",
+      "refused": true,
+      "citations": [],
+      "answer_match": false,
+      "citation_match": false
+    },
+    {
+      "question": "How do I open the settings page for Integrations?",
+      "expected_document_id": "integrations-configuration-02",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Integrations**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "integrations-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where are Mobile permission options managed?",
+      "expected_document_id": "mobile-permissions-05",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Mobile**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "mobile-permissions-05"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "What console area is used to diagnose a Security issue?",
+      "expected_document_id": "security-troubleshooting-03",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Security**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "security-configuration-02"
+      ],
+      "answer_match": false,
+      "citation_match": false
+    },
+    {
+      "question": "How do I navigate to limits for the Workspace area?",
+      "expected_document_id": "workspace-limits-04",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Workspace**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "workspace-limits-04"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which console page should I use when troubleshooting Accounts?",
+      "expected_document_id": "accounts-troubleshooting-03",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Accounts**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "accounts-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where are API permission settings found?",
+      "expected_document_id": "api-permissions-05",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Api**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "api-permissions-05"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where can I read Admin usage limits?",
+      "expected_document_id": "admin-limits-04",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Admin**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "admin-limits-04"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where are Analytics setup options found?",
+      "expected_document_id": "analytics-configuration-02",
+      "http_status": 200,
+      "answer": "I don't have enough information in the available documentation to answer that.",
+      "refused": true,
+      "citations": [],
+      "answer_match": false,
+      "citation_match": false
+    },
+    {
+      "question": "I need to modify Automation permission settings. What route should I follow?",
+      "expected_document_id": "automation-permissions-05",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Automation**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "automation-permissions-05"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where are the troubleshooting steps for Integrations?",
+      "expected_document_id": "integrations-troubleshooting-03",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Integrations**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "integrations-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "How do I navigate to limits for Mobile?",
+      "expected_document_id": "mobile-limits-04",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Mobile**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "mobile-limits-04"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where can I read Security configuration instructions?",
+      "expected_document_id": "security-configuration-02",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Security**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "security-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which page in Accounts contains its configuration steps?",
+      "expected_document_id": "accounts-configuration-07",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Accounts**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "accounts-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": false
+    },
+    {
+      "question": "Where should I go to troubleshoot an API issue?",
+      "expected_document_id": "api-troubleshooting-08",
+      "http_status": 200,
+      "answer": "I don't have enough information in the available documentation to answer that.",
+      "refused": true,
+      "citations": [],
+      "answer_match": false,
+      "citation_match": false
+    },
+    {
+      "question": "Where can I manage Billing permission settings?",
+      "expected_document_id": "billing-permissions-10",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Billing**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "billing-permissions-05"
+      ],
+      "answer_match": true,
+      "citation_match": false
+    }
+  ]
+}

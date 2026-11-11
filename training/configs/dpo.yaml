@@ -1,0 +1,9 @@
+sft_adapter: models/triage-sft
+base_model: Qwen/Qwen2.5-3B-Instruct
+dataset: data/processed/triage_preferences.jsonl
+output_dir: models/triage-dpo
+epochs: 1
+learning_rate: 0.00005
+beta: 0.1
+max_length: 2048
+compute_dtype: float16

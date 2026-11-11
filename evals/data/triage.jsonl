@@ -1,0 +1,3 @@
+{"ticket":"The API returns an error and fails after deployment","label":{"category":"bug","priority":"normal","product_area":"platform"}}
+{"ticket":"I was charged twice for my monthly subscription","label":{"category":"billing","priority":"high","product_area":"billing"}}
+{"ticket":"Please add a dark mode option","label":{"category":"feature_request","priority":"low","product_area":"general"}}

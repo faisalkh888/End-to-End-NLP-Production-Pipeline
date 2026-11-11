@@ -1,0 +1,20 @@
+{"question": "Where in the console does the Accounts guide send me to change a setting?", "access_level": "public", "relevant_document_ids": ["accounts-configuration-02"]}
+{"question": "Which page should I open after choosing Api to review configuration options?", "access_level": "public", "relevant_document_ids": ["api-configuration-02"]}
+{"question": "How do I navigate to the Billing limits page in the workspace console?", "access_level": "public", "relevant_document_ids": ["billing-limits-04"]}
+{"question": "After selecting Admin, what section does the permissions guide say to open?", "access_level": "public", "relevant_document_ids": ["admin-permissions-05"]}
+{"question": "Where should I go in the console to find Analytics troubleshooting guidance?", "access_level": "public", "relevant_document_ids": ["analytics-troubleshooting-03"]}
+{"question": "What console section is used for the Automation getting started guide?", "access_level": "engineering", "relevant_document_ids": ["automation-getting-started-01"]}
+{"question": "Which menu path opens Integrations configuration?", "access_level": "public", "relevant_document_ids": ["integrations-configuration-02"]}
+{"question": "In the Mobile guide, which console section covers permissions?", "access_level": "public", "relevant_document_ids": ["mobile-permissions-05"]}
+{"question": "Which section should I select for Security troubleshooting?", "access_level": "public", "relevant_document_ids": ["security-troubleshooting-03"]}
+{"question": "How do I get to Workspace limits from the console?", "access_level": "public", "relevant_document_ids": ["workspace-limits-04"]}
+{"question": "Where is the Accounts troubleshooting page in the console menu?", "access_level": "public", "relevant_document_ids": ["accounts-troubleshooting-03"]}
+{"question": "What section follows Api in the workspace console when reviewing access permissions?", "access_level": "public", "relevant_document_ids": ["api-permissions-05"]}
+{"question": "Which Billing page should I select for the getting started instructions?", "access_level": "engineering", "relevant_document_ids": ["billing-getting-started-01"]}
+{"question": "Where in the Admin menu are the documented limits?", "access_level": "public", "relevant_document_ids": ["admin-limits-04"]}
+{"question": "How can I navigate to Analytics configuration in the workspace console?", "access_level": "public", "relevant_document_ids": ["analytics-configuration-02"]}
+{"question": "Which console section contains Automation permission settings?", "access_level": "public", "relevant_document_ids": ["automation-permissions-05"]}
+{"question": "Where does the guide direct me for Integrations troubleshooting?", "access_level": "public", "relevant_document_ids": ["integrations-troubleshooting-03"]}
+{"question": "What is the console path to the Mobile limits guide?", "access_level": "public", "relevant_document_ids": ["mobile-limits-04"]}
+{"question": "After I choose Security, which console page is for configuration?", "access_level": "public", "relevant_document_ids": ["security-configuration-02"]}
+{"question": "Which Workspace section should I open to follow its getting started guide?", "access_level": "engineering", "relevant_document_ids": ["workspace-getting-started-01"]}

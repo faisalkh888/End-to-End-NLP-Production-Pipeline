@@ -1,0 +1,9 @@
+{
+  "examples": 70,
+  "mode": "deterministic fallback (generator disabled)",
+  "data_status": "fictional manually reviewed scenarios; not real-customer acceptance evidence",
+  "category_accuracy": 0.24285714285714285,
+  "priority_accuracy": 0.37142857142857144,
+  "product_area_accuracy": 0.2714285714285714,
+  "category_macro_f1": 0.1950371057513915
+}

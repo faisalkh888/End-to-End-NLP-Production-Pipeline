@@ -1,0 +1,497 @@
+{
+  "examples": 20,
+  "answer_exact_support_rate": 1.0,
+  "expected_citation_rate": 1.0,
+  "exact_document_id_rate": 1.0,
+  "joint_answer_and_citation_rate": 1.0,
+  "refusal_count": 0,
+  "http_error_count": 0,
+  "metric_note": "Exact normalized reference-answer match; citation may match an explicitly allowed equivalent source page. Exact document-ID rate is reported separately. Synthetic corpus, not human acceptance evidence.",
+  "per_example": [
+    {
+      "question": "If I want to adjust an Accounts option, which console page should I open?",
+      "expected_document_id": "accounts-configuration-02",
+      "acceptable_document_ids": [
+        "accounts-configuration-02",
+        "accounts-configuration-07",
+        "accounts-configuration-12",
+        "accounts-configuration-17",
+        "accounts-configuration-22",
+        "accounts-configuration-32",
+        "accounts-configuration-37",
+        "accounts-configuration-42",
+        "accounts-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Accounts**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "accounts-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where is the Accounts troubleshooting page in the console?",
+      "expected_document_id": "accounts-troubleshooting-03",
+      "acceptable_document_ids": [
+        "accounts-troubleshooting-03",
+        "accounts-troubleshooting-08",
+        "accounts-troubleshooting-13",
+        "accounts-troubleshooting-18",
+        "accounts-troubleshooting-23",
+        "accounts-troubleshooting-28",
+        "accounts-troubleshooting-33",
+        "accounts-troubleshooting-38",
+        "accounts-troubleshooting-43",
+        "accounts-troubleshooting-48"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Accounts**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "accounts-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where do I open Admin configuration?",
+      "expected_document_id": "admin-configuration-02",
+      "acceptable_document_ids": [
+        "admin-configuration-02",
+        "admin-configuration-07",
+        "admin-configuration-12",
+        "admin-configuration-17",
+        "admin-configuration-22",
+        "admin-configuration-32",
+        "admin-configuration-37",
+        "admin-configuration-42",
+        "admin-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Admin**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "admin-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which Admin console page covers permissions?",
+      "expected_document_id": "admin-permissions-05",
+      "acceptable_document_ids": [
+        "admin-permissions-05",
+        "admin-permissions-10",
+        "admin-permissions-15",
+        "admin-permissions-20",
+        "admin-permissions-25",
+        "admin-permissions-30",
+        "admin-permissions-35",
+        "admin-permissions-45",
+        "admin-permissions-50"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Admin**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "admin-permissions-05"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where do I open Analytics configuration?",
+      "expected_document_id": "analytics-configuration-02",
+      "acceptable_document_ids": [
+        "analytics-configuration-02",
+        "analytics-configuration-07",
+        "analytics-configuration-12",
+        "analytics-configuration-17",
+        "analytics-configuration-22",
+        "analytics-configuration-32",
+        "analytics-configuration-37",
+        "analytics-configuration-42",
+        "analytics-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Analytics**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "analytics-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which console page should I use for Analytics troubleshooting?",
+      "expected_document_id": "analytics-troubleshooting-03",
+      "acceptable_document_ids": [
+        "analytics-troubleshooting-03",
+        "analytics-troubleshooting-08",
+        "analytics-troubleshooting-13",
+        "analytics-troubleshooting-18",
+        "analytics-troubleshooting-23",
+        "analytics-troubleshooting-28",
+        "analytics-troubleshooting-33",
+        "analytics-troubleshooting-38",
+        "analytics-troubleshooting-43",
+        "analytics-troubleshooting-48"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Analytics**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "analytics-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where in the console can I review API limits?",
+      "expected_document_id": "api-limits-04",
+      "acceptable_document_ids": [
+        "api-limits-04",
+        "api-limits-09",
+        "api-limits-19",
+        "api-limits-24",
+        "api-limits-29",
+        "api-limits-34",
+        "api-limits-39",
+        "api-limits-44",
+        "api-limits-49"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Api**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "api-limits-04"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which page is used to troubleshoot API issues?",
+      "expected_document_id": "api-troubleshooting-03",
+      "acceptable_document_ids": [
+        "api-troubleshooting-03",
+        "api-troubleshooting-08",
+        "api-troubleshooting-13",
+        "api-troubleshooting-18",
+        "api-troubleshooting-23",
+        "api-troubleshooting-28",
+        "api-troubleshooting-33",
+        "api-troubleshooting-38",
+        "api-troubleshooting-43",
+        "api-troubleshooting-48"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Api**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "api-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where do I find Automation configuration options?",
+      "expected_document_id": "automation-configuration-02",
+      "acceptable_document_ids": [
+        "automation-configuration-02",
+        "automation-configuration-07",
+        "automation-configuration-12",
+        "automation-configuration-17",
+        "automation-configuration-22",
+        "automation-configuration-32",
+        "automation-configuration-37",
+        "automation-configuration-42",
+        "automation-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Automation**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "automation-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where do I review Automation permissions?",
+      "expected_document_id": "automation-permissions-05",
+      "acceptable_document_ids": [
+        "automation-permissions-05",
+        "automation-permissions-10",
+        "automation-permissions-15",
+        "automation-permissions-20",
+        "automation-permissions-25",
+        "automation-permissions-30",
+        "automation-permissions-35",
+        "automation-permissions-45",
+        "automation-permissions-50"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Automation**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "automation-permissions-05"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which console page contains Billing configuration?",
+      "expected_document_id": "billing-configuration-02",
+      "acceptable_document_ids": [
+        "billing-configuration-02",
+        "billing-configuration-07",
+        "billing-configuration-12",
+        "billing-configuration-17",
+        "billing-configuration-22",
+        "billing-configuration-32",
+        "billing-configuration-37",
+        "billing-configuration-42",
+        "billing-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Billing**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "billing-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where can I review Billing limits?",
+      "expected_document_id": "billing-limits-04",
+      "acceptable_document_ids": [
+        "billing-limits-04",
+        "billing-limits-09",
+        "billing-limits-19",
+        "billing-limits-24",
+        "billing-limits-29",
+        "billing-limits-34",
+        "billing-limits-39",
+        "billing-limits-44",
+        "billing-limits-49"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Billing**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "billing-limits-04"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where do I find configuration for Integrations?",
+      "expected_document_id": "integrations-configuration-02",
+      "acceptable_document_ids": [
+        "integrations-configuration-02",
+        "integrations-configuration-07",
+        "integrations-configuration-12",
+        "integrations-configuration-17",
+        "integrations-configuration-22",
+        "integrations-configuration-32",
+        "integrations-configuration-37",
+        "integrations-configuration-42",
+        "integrations-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Integrations**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "integrations-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which console page helps troubleshoot Integrations?",
+      "expected_document_id": "integrations-troubleshooting-03",
+      "acceptable_document_ids": [
+        "integrations-troubleshooting-03",
+        "integrations-troubleshooting-08",
+        "integrations-troubleshooting-13",
+        "integrations-troubleshooting-18",
+        "integrations-troubleshooting-23",
+        "integrations-troubleshooting-28",
+        "integrations-troubleshooting-33",
+        "integrations-troubleshooting-38",
+        "integrations-troubleshooting-43",
+        "integrations-troubleshooting-48"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Integrations**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "integrations-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where can I find Mobile configuration?",
+      "expected_document_id": "mobile-configuration-02",
+      "acceptable_document_ids": [
+        "mobile-configuration-02",
+        "mobile-configuration-07",
+        "mobile-configuration-12",
+        "mobile-configuration-17",
+        "mobile-configuration-22",
+        "mobile-configuration-32",
+        "mobile-configuration-37",
+        "mobile-configuration-42",
+        "mobile-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Mobile**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "mobile-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which Mobile page covers permissions?",
+      "expected_document_id": "mobile-permissions-05",
+      "acceptable_document_ids": [
+        "mobile-permissions-05",
+        "mobile-permissions-10",
+        "mobile-permissions-15",
+        "mobile-permissions-20",
+        "mobile-permissions-25",
+        "mobile-permissions-30",
+        "mobile-permissions-35",
+        "mobile-permissions-45",
+        "mobile-permissions-50"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Mobile**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "mobile-permissions-05"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where in the workspace console are Security configuration controls?",
+      "expected_document_id": "security-configuration-02",
+      "acceptable_document_ids": [
+        "security-configuration-02",
+        "security-configuration-07",
+        "security-configuration-12",
+        "security-configuration-17",
+        "security-configuration-22",
+        "security-configuration-32",
+        "security-configuration-37",
+        "security-configuration-42",
+        "security-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Security**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "security-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which page should I open to troubleshoot Security?",
+      "expected_document_id": "security-troubleshooting-03",
+      "acceptable_document_ids": [
+        "security-troubleshooting-03",
+        "security-troubleshooting-08",
+        "security-troubleshooting-13",
+        "security-troubleshooting-18",
+        "security-troubleshooting-23",
+        "security-troubleshooting-28",
+        "security-troubleshooting-33",
+        "security-troubleshooting-38",
+        "security-troubleshooting-43",
+        "security-troubleshooting-48"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Security**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "security-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where is Workspace configuration in the console?",
+      "expected_document_id": "workspace-configuration-02",
+      "acceptable_document_ids": [
+        "workspace-configuration-02",
+        "workspace-configuration-07",
+        "workspace-configuration-12",
+        "workspace-configuration-17",
+        "workspace-configuration-22",
+        "workspace-configuration-32",
+        "workspace-configuration-37",
+        "workspace-configuration-42",
+        "workspace-configuration-47"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Workspace**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "workspace-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which Workspace console page describes permissions?",
+      "expected_document_id": "workspace-permissions-05",
+      "acceptable_document_ids": [
+        "workspace-permissions-05",
+        "workspace-permissions-10",
+        "workspace-permissions-15",
+        "workspace-permissions-20",
+        "workspace-permissions-25",
+        "workspace-permissions-30",
+        "workspace-permissions-35",
+        "workspace-permissions-45",
+        "workspace-permissions-50"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Workspace**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "workspace-permissions-05"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    }
+  ]
+}

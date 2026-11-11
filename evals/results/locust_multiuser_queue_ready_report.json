@@ -1,0 +1,66 @@
+{
+  "date": "2026-11-11",
+  "status": "completed",
+  "endpoint": "http://localhost:8000",
+  "model_version": "atlas-triage-sft",
+  "locust_version": "2.47.0",
+  "configured_users": 20,
+  "spawn_rate_users_per_second": 2,
+  "duration_seconds": 240,
+  "wait_time_seconds": {
+    "min": 22,
+    "max": 28
+  },
+  "vllm_max_num_seqs": 2,
+  "api_inference_slots": 2,
+  "queue_timeout_seconds": 20,
+  "requests": 175,
+  "failures": 0,
+  "failure_rate": 0.0,
+  "throughput_requests_per_second": 0.7398010019573145,
+  "routes": {
+    "POST /v1/qa": {
+      "requests": 109,
+      "failures": 0,
+      "average_ms": 30.568077981624477,
+      "median_ms": 29.0,
+      "p95_ms": 46.0,
+      "max_ms": 67.03569999990577,
+      "requests_per_second": 0.4607903383619844
+    },
+    "POST /v1/triage (SFT model)": {
+      "requests": 66,
+      "failures": 0,
+      "average_ms": 8575.665740909133,
+      "median_ms": 7300.0,
+      "p95_ms": 17000.0,
+      "max_ms": 19566.963699999178,
+      "requests_per_second": 0.27901066359533
+    },
+    "POST /v1/triage (fallback)": {
+      "requests": 0,
+      "failures": 0
+    }
+  },
+  "triage_model_share": 1.0,
+  "triage_fallback_share": 0.0,
+  "comparison_to_previous_20_user_run": {
+    "requests": 192,
+    "failures": 0,
+    "failure_rate": 0.0,
+    "throughput_requests_per_second": 0.81,
+    "model_backed_triage_requests": 26,
+    "fallback_triage_requests": 54,
+    "triage_fallback_share": 0.675,
+    "triage_model_average_ms": 6447.16,
+    "triage_model_p95_ms": 7000
+  },
+  "interpretation": "With the bounded 20-second API queue and two vLLM sequence slots, all 66 triage requests in this four-minute mixed-workload run were handled by the SFT model; no fallback responses or HTTP failures were recorded. Model triage p95 was 17 seconds and max was about 19.6 seconds, showing the queue trades reduced fallback for higher tail latency. This is a local prototype load sample, not production capacity certification.",
+  "artifacts": [
+    "evals/results/locust_multiuser_queue_ready_stats.csv",
+    "evals/results/locust_multiuser_queue_ready_stats_history.csv",
+    "evals/results/locust_multiuser_queue_ready_failures.csv",
+    "evals/results/locust_multiuser_queue_ready_exceptions.csv",
+    "evals/results/locust_multiuser_queue_ready.html"
+  ]
+}

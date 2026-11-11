@@ -1,0 +1,62 @@
+{
+  "date": "2026-11-11",
+  "status": "completed",
+  "endpoint": "http://localhost:8000",
+  "model_version": "atlas-triage-sft",
+  "locust_version": "2.47.0",
+  "configured_users": 20,
+  "spawn_rate_users_per_second": 2,
+  "duration_seconds": 240,
+  "wait_time_seconds": {
+    "min": 22,
+    "max": 28
+  },
+  "api_rate_limit_per_minute": 60,
+  "requests": 193,
+  "failures": 0,
+  "failure_rate": 0.0,
+  "throughput_requests_per_second": 0.8224440296670342,
+  "routes": {
+    "POST /v1/qa": {
+      "requests": 118,
+      "failures": 0,
+      "average_ms": 34.544154237356466,
+      "median_ms": 33,
+      "p95_ms": 48,
+      "max_ms": 74.0075000012439
+    },
+    "POST /v1/triage (model)": {
+      "requests": 20,
+      "failures": 0,
+      "average_ms": 6406.904700000177,
+      "median_ms": 6400,
+      "p95_ms": 7900,
+      "max_ms": 7907.330100000763
+    },
+    "POST /v1/triage (fallback-busy)": {
+      "requests": 55,
+      "failures": 0,
+      "average_ms": 14.277019999909415,
+      "median_ms": 10,
+      "p95_ms": 40,
+      "max_ms": 49.109200001112185
+    }
+  },
+  "triage_fallback_share": 0.7333333333333333,
+  "comparison_to_previous_20_user_run": {
+    "requests": 111,
+    "failures": 23,
+    "failure_rate": 0.2072072072072072,
+    "throughput_requests_per_second": 0.4650337653,
+    "triage_failures": 23,
+    "triage_timeout_p95_ms": 45000
+  },
+  "interpretation": "The guard prevented HTTP 500 timeouts and increased throughput in this run. It did so by routing concurrent requests to the deterministic fallback: 55 of 75 triage requests (73.3%) used fallback-busy, so this result is a reliability improvement with an explicit model-quality tradeoff, not proof that vLLM serves 20-user concurrency.",
+  "artifacts": [
+    "evals/results/locust_multiuser_after_guard_stats.csv",
+    "evals/results/locust_multiuser_after_guard_stats_history.csv",
+    "evals/results/locust_multiuser_after_guard_failures.csv",
+    "evals/results/locust_multiuser_after_guard_exceptions.csv",
+    "evals/results/locust_multiuser_after_guard.html"
+  ]
+}

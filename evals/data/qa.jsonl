@@ -1,0 +1,27 @@
+{"question": "Where should API credentials be stored?", "access_level": "engineering", "relevant_document_ids": ["api-configuration-02"]}
+{"question": "How do I open Billing Configuration from the workspace console?", "access_level": "engineering", "relevant_document_ids": ["billing-configuration-02"]}
+{"question": "In the Accounts guide, which console section should I open to change configuration?", "access_level": "public", "relevant_document_ids": ["accounts-configuration-02"]}
+{"question": "For Accounts initial setup, which section does the guide tell me to select?", "access_level": "engineering", "relevant_document_ids": ["accounts-getting-started-01"]}
+{"question": "Which Accounts console section should I choose to review the documented limits?", "access_level": "public", "relevant_document_ids": ["accounts-limits-04"]}
+{"question": "In the Accounts guide, which console section covers permissions?", "access_level": "public", "relevant_document_ids": ["accounts-permissions-05"]}
+{"question": "For Accounts troubleshooting, which section should I open in the workspace console?", "access_level": "public", "relevant_document_ids": ["accounts-troubleshooting-03"]}
+{"question": "In the Api guide, which console section should I open to change configuration?", "access_level": "public", "relevant_document_ids": ["api-configuration-02"]}
+{"question": "For Api initial setup, which section does the guide tell me to select?", "access_level": "engineering", "relevant_document_ids": ["api-getting-started-01"]}
+{"question": "Which Api console section should I choose to review the documented limits?", "access_level": "public", "relevant_document_ids": ["api-limits-04"]}
+{"question": "In the Api guide, which console section covers permissions?", "access_level": "public", "relevant_document_ids": ["api-permissions-05"]}
+{"question": "For Api troubleshooting, which section should I open in the workspace console?", "access_level": "public", "relevant_document_ids": ["api-troubleshooting-03"]}
+{"question": "In the Billing guide, which console section should I open to change configuration?", "access_level": "public", "relevant_document_ids": ["billing-configuration-02"]}
+{"question": "For Billing initial setup, which section does the guide tell me to select?", "access_level": "engineering", "relevant_document_ids": ["billing-getting-started-01"]}
+{"question": "Which Billing console section should I choose to review the documented limits?", "access_level": "public", "relevant_document_ids": ["billing-limits-04"]}
+{"question": "In the Billing guide, which console section covers permissions?", "access_level": "public", "relevant_document_ids": ["billing-permissions-05"]}
+{"question": "For Billing troubleshooting, which section should I open in the workspace console?", "access_level": "public", "relevant_document_ids": ["billing-troubleshooting-03"]}
+{"question": "In the Integrations guide, which console section should I open to change configuration?", "access_level": "public", "relevant_document_ids": ["integrations-configuration-02"]}
+{"question": "For Integrations initial setup, which section does the guide tell me to select?", "access_level": "engineering", "relevant_document_ids": ["integrations-getting-started-01"]}
+{"question": "Which Integrations console section should I choose to review the documented limits?", "access_level": "public", "relevant_document_ids": ["integrations-limits-04"]}
+{"question": "In the Integrations guide, which console section covers permissions?", "access_level": "public", "relevant_document_ids": ["integrations-permissions-05"]}
+{"question": "For Integrations troubleshooting, which section should I open in the workspace console?", "access_level": "public", "relevant_document_ids": ["integrations-troubleshooting-03"]}
+{"question": "In the Mobile guide, which console section should I open to change configuration?", "access_level": "public", "relevant_document_ids": ["mobile-configuration-02"]}
+{"question": "For Mobile initial setup, which section does the guide tell me to select?", "access_level": "engineering", "relevant_document_ids": ["mobile-getting-started-01"]}
+{"question": "Which Mobile console section should I choose to review the documented limits?", "access_level": "public", "relevant_document_ids": ["mobile-limits-04"]}
+{"question": "In the Mobile guide, which console section covers permissions?", "access_level": "public", "relevant_document_ids": ["mobile-permissions-05"]}
+{"question": "For Mobile troubleshooting, which section should I open in the workspace console?", "access_level": "public", "relevant_document_ids": ["mobile-troubleshooting-03"]}

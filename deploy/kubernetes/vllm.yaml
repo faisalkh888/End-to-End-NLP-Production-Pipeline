@@ -1,0 +1,52 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: atlas-vllm}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: atlas-vllm}}
+  template:
+    metadata: {labels: {app: atlas-vllm}}
+    spec:
+      containers:
+        - name: vllm
+          image: vllm/vllm-openai:v0.5.3
+          args:
+            - --model
+            - Qwen/Qwen2.5-3B-Instruct
+            - --host
+            - 0.0.0.0
+            - --enable-lora
+            - --max-lora-rank
+            - "16"
+            - --lora-modules
+            - atlas-triage-sft=/models/triage-sft
+            - --max-model-len
+            - "2048"
+            - --max-num-seqs
+            - "1"
+            - --gpu-memory-utilization
+            - "0.85"
+            - --cpu-offload-gb
+            - "2"
+            - --swap-space
+            - "1"
+            - --enforce-eager
+          ports: [{containerPort: 8000}]
+          volumeMounts:
+            - {name: triage-sft-adapter, mountPath: /models/triage-sft, readOnly: true}
+          resources:
+            limits: {nvidia.com/gpu: 1, memory: 16Gi, cpu: "8"}
+          env:
+            - {name: HUGGING_FACE_HUB_TOKEN, valueFrom: {secretKeyRef: {name: model-secrets, key: hf-token}}}
+      volumes:
+        - name: triage-sft-adapter
+          hostPath:
+            path: /models/triage-sft
+            type: Directory
+---
+apiVersion: v1
+kind: Service
+metadata: {name: atlas-vllm}
+spec:
+  selector: {app: atlas-vllm}
+  ports: [{port: 8000, targetPort: 8000}]

@@ -1,0 +1,16 @@
+stages:
+  generate_synthetic_demo_data:
+    cmd: python scripts/generate_synthetic_training_data.py
+    deps: [scripts/generate_synthetic_training_data.py]
+    outs:
+      - data/processed/triage_sft.jsonl
+      - data/processed/triage_preferences.jsonl
+      - data/processed/retrieval_pairs.jsonl
+  train_sft:
+    cmd: python training/train_sft.py
+    deps: [data/processed/triage_sft.jsonl, training/train_sft.py, training/configs/sft.yaml]
+    outs: [models/triage-sft]
+  train_dpo:
+    cmd: python training/train_dpo.py
+    deps: [data/processed/triage_preferences.jsonl, training/train_dpo.py, training/configs/dpo.yaml, models/triage-sft]
+    outs: [models/triage-dpo]

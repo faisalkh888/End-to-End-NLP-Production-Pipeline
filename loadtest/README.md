@@ -1,0 +1,15 @@
+# Load test
+
+Install Locust, start the local stack, and run from the repository root. The wait interval can be paced with `ATLAS_LOAD_WAIT_MIN` and `ATLAS_LOAD_WAIT_MAX`; the default (0.2–1 second) is intentionally a high request rate and can trigger the API's 60 requests/minute per-IP limiter with multiple users.
+
+PowerShell example for a paced 20-user run:
+
+```powershell
+$env:ATLAS_LOAD_WAIT_MIN = '22'
+$env:ATLAS_LOAD_WAIT_MAX = '28'
+python -m locust -f loadtest/locustfile.py --host http://localhost:8000 --headless --users 20 --spawn-rate 2 --run-time 4m --csv evals/results/locust_multiuser --csv-full-history --html evals/results/locust_multiuser.html
+```
+
+The API mixes QA and SFT-backed triage requests (3:2 task weighting). The local triage vLLM configuration allows one sequence at a time and CPU offload. On 2026-11-11, the baseline 20-user four-minute run recorded 111 requests and 23 triage HTTP 500s (20.7% overall failures); triage p95 reached the 45-second API-to-vLLM timeout. After adding bounded inference admission and a marked deterministic fallback, the same run settings produced 193 requests, zero HTTP failures and 0.82 requests/second. QA p95 was 48 ms; model-backed triage p95 was 7.9 seconds; 55 of 75 triage calls (73.3%) used the fast `fallback-busy` path. The fallback reduced failures by shifting many concurrent requests away from the model, so this is a reliability improvement with an accuracy tradeoff. Compare `evals/results/locust_multiuser_report.json` with `evals/results/locust_multiuser_after_guard_report.json` and inspect each run's CSV/HTML files.
+
+This sample does not claim the 1.5 second TTFT SLO; true TTFT requires a streaming generator and an instrumented streaming gateway. The guard prevents unbounded concurrent inference and marks deterministic responses with `X-Triage-Mode`; the API also increments `atlas_triage_fallback_total{reason=...}`. The fallback scored 24.3% category accuracy, 19.5% category macro-F1, 37.1% priority accuracy, and 27.1% product-area accuracy on the 70 fictional reviewed scenarios (`evals/results/triage_fallback_reviewed.json`). That is too weak to present fallback as quality triage. Tune/scale inference or explicitly reject excess work before making capacity claims. A follow-up run with `--max-num-seqs 2`, two API inference slots, and a 20-second queue wait completed 175 requests with zero failures; all 66 triage calls were model-backed and none used fallback. Model triage p95 was 17 seconds (8.58 seconds average), and QA p95 was 46 ms. Report: `evals/results/locust_multiuser_queue_ready_report.json`. The higher tail latency should be reported alongside the reduced fallback rate. A final rerun after Compose restart recorded 167 requests, zero failures, 0.72 requests/second, and all 66 triage requests model-backed (triage p95 15 seconds, QA p95 69 ms). See `evals/results/locust_multiuser_final_report.json`. The current vLLM INFO logs include full prompt text; use synthetic requests only until logging is disabled or redacted.

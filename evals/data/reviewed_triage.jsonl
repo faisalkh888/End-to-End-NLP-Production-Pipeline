@@ -1,0 +1,70 @@
+{"ticket":"After the latest release, the audit table freezes when I open page three.","label":{"category":"bug","priority":"normal","product_area":"platform"}}
+{"ticket":"The invite form accepts an email but never sends the invitation message.","label":{"category":"bug","priority":"normal","product_area":"platform"}}
+{"ticket":"A report downloaded as CSV has the column names shifted by one position.","label":{"category":"bug","priority":"normal","product_area":"platform"}}
+{"ticket":"The account settings panel turns blank after I change the time zone.","label":{"category":"bug","priority":"normal","product_area":"identity"}}
+{"ticket":"The search page shows the previous query after I clear the search box.","label":{"category":"bug","priority":"normal","product_area":"platform"}}
+{"ticket":"Two browser tabs editing the same profile overwrite each other's changes.","label":{"category":"bug","priority":"high","product_area":"identity"}}
+{"ticket":"The notification badge remains visible even after I read every alert.","label":{"category":"bug","priority":"normal","product_area":"platform"}}
+{"ticket":"The dashboard chart labels overlap when the browser window is narrow.","label":{"category":"bug","priority":"normal","product_area":"platform"}}
+{"ticket":"The integration status page reports connected while the sync has stopped.","label":{"category":"bug","priority":"high","product_area":"platform"}}
+{"ticket":"A saved filter disappears after I sign out and sign back in.","label":{"category":"bug","priority":"normal","product_area":"platform"}}
+{"ticket":"My invoice includes the same workspace seat twice this month.","label":{"category":"billing","priority":"high","product_area":"billing"}}
+{"ticket":"The card was charged for an annual plan even though we selected monthly billing.","label":{"category":"billing","priority":"high","product_area":"billing"}}
+{"ticket":"A credit issued last week is not reflected in the balance due.","label":{"category":"billing","priority":"high","product_area":"billing"}}
+{"ticket":"The renewal receipt lists a different amount than the checkout confirmation.","label":{"category":"billing","priority":"high","product_area":"billing"}}
+{"ticket":"We cancelled the add-on but it is still listed on the latest invoice.","label":{"category":"billing","priority":"high","product_area":"billing"}}
+{"ticket":"Our invoice is missing the purchase-order reference entered during checkout.","label":{"category":"billing","priority":"normal","product_area":"billing"}}
+{"ticket":"A failed payment attempt appears as a completed charge on our statement.","label":{"category":"billing","priority":"high","product_area":"billing"}}
+{"ticket":"Please explain the tax amount shown on our latest subscription invoice.","label":{"category":"billing","priority":"normal","product_area":"billing"}}
+{"ticket":"The plan change was confirmed, but the prorated amount looks incorrect.","label":{"category":"billing","priority":"high","product_area":"billing"}}
+{"ticket":"We need a copy of the receipt for the workspace renewal last month.","label":{"category":"billing","priority":"low","product_area":"billing"}}
+{"ticket":"I no longer have access to the email address used for my account.","label":{"category":"account","priority":"high","product_area":"identity"}}
+{"ticket":"The recovery link says it has expired immediately after it arrives.","label":{"category":"account","priority":"high","product_area":"identity"}}
+{"ticket":"My authenticator device was replaced and I cannot complete sign-in.","label":{"category":"account","priority":"high","product_area":"identity"}}
+{"ticket":"A teammate is locked out after too many verification attempts.","label":{"category":"account","priority":"high","product_area":"identity"}}
+{"ticket":"I need to transfer workspace ownership from a former employee.","label":{"category":"account","priority":"normal","product_area":"identity"}}
+{"ticket":"The profile keeps asking me to verify an old phone number.","label":{"category":"account","priority":"high","product_area":"identity"}}
+{"ticket":"A new administrator cannot accept the workspace invitation.","label":{"category":"account","priority":"high","product_area":"identity"}}
+{"ticket":"My session ends each time I approve the sign-in prompt.","label":{"category":"account","priority":"high","product_area":"identity"}}
+{"ticket":"Please remove a former contractor from our workspace account.","label":{"category":"account","priority":"normal","product_area":"identity"}}
+{"ticket":"The sign-in page says my account is pending verification, but I verified it yesterday.","label":{"category":"account","priority":"high","product_area":"identity"}}
+{"ticket":"Could the workspace support custom themes for different departments?","label":{"category":"feature_request","priority":"low","product_area":"general"}}
+{"ticket":"Please add a way to schedule a report to run on the first day of each month.","label":{"category":"feature_request","priority":"low","product_area":"platform"}}
+{"ticket":"It would help to export a list of users together with their assigned roles.","label":{"category":"feature_request","priority":"low","product_area":"identity"}}
+{"ticket":"Can we have a read-only role for auditors who only need to view activity?","label":{"category":"feature_request","priority":"low","product_area":"identity"}}
+{"ticket":"Please let workspace owners set a default time zone for new members.","label":{"category":"feature_request","priority":"low","product_area":"identity"}}
+{"ticket":"We would like a calendar view for upcoming subscription renewals.","label":{"category":"feature_request","priority":"low","product_area":"billing"}}
+{"ticket":"Could saved searches be shared with the rest of the support team?","label":{"category":"feature_request","priority":"low","product_area":"platform"}}
+{"ticket":"Please add an option to download a monthly activity summary as a PDF.","label":{"category":"feature_request","priority":"low","product_area":"platform"}}
+{"ticket":"Our team needs a setting to mute non-critical notifications overnight.","label":{"category":"feature_request","priority":"low","product_area":"platform"}}
+{"ticket":"Could the user list include a field for each person's department?","label":{"category":"feature_request","priority":"low","product_area":"identity"}}
+{"ticket":"Where can I see which teammates currently have administrator access?","label":{"category":"how_to","priority":"low","product_area":"identity"}}
+{"ticket":"How do I change the billing contact without changing the workspace owner?","label":{"category":"how_to","priority":"low","product_area":"billing"}}
+{"ticket":"What steps should I follow to invite a teammate with a read-only role?","label":{"category":"how_to","priority":"low","product_area":"identity"}}
+{"ticket":"How can I download the activity history for a single user?","label":{"category":"how_to","priority":"low","product_area":"identity"}}
+{"ticket":"Where do I update the email address that receives service announcements?","label":{"category":"how_to","priority":"low","product_area":"general"}}
+{"ticket":"How can I check when our current subscription renews?","label":{"category":"how_to","priority":"low","product_area":"billing"}}
+{"ticket":"Which page shows the status of a data export that is still running?","label":{"category":"how_to","priority":"low","product_area":"platform"}}
+{"ticket":"How do I remove an old integration from the workspace?","label":{"category":"how_to","priority":"low","product_area":"platform"}}
+{"ticket":"Where can I find the list of API requests made by our workspace?","label":{"category":"how_to","priority":"low","product_area":"platform"}}
+{"ticket":"What is the process for changing a member from editor to viewer?","label":{"category":"how_to","priority":"low","product_area":"general"}}
+{"ticket":"An unknown device signed in to our workspace overnight; please investigate immediately.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"I found an API credential in a public repository that appears to belong to our workspace.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"A regular member can access records that should be restricted to administrators.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"Several users received password reset emails they did not request.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"The audit log shows a successful login from a location none of us recognize.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"A former employee's account appears to still be making API calls.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"We suspect a workspace export was downloaded by someone without authorization.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"An invitation link intended for one person was accepted by a different account.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"The access log contains repeated attempts to guess an administrator password.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"A user's role changed to owner even though no administrator approved it.","label":{"category":"security","priority":"urgent","product_area":"security"}}
+{"ticket":"I am not sure which team should handle a question about our workspace setup.","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"Could someone direct us to the right contact for a general question about our workspace?","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"I have feedback about the onboarding call and would like the right contact person.","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"Please help me understand who owns the next step for this request.","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"We are unsure whether our question belongs to support or our account representative.","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"We would like to thank the team that helped us with our recent onboarding.","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"I would like to share general feedback about the latest product announcement.","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"Could you share the schedule for the next customer community event?","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"We are looking for information about joining the customer community program.","label":{"category":"other","priority":"normal","product_area":"general"}}
+{"ticket":"Could you direct me to the best place to discuss a partnership inquiry?","label":{"category":"other","priority":"normal","product_area":"general"}}

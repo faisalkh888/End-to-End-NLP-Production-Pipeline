@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-11",
+  "status": "completed",
+  "endpoint": "http://localhost:8000",
+  "model_version": "atlas-triage-sft",
+  "configured_users": 20,
+  "spawn_rate_users_per_second": 2,
+  "duration_seconds": 240,
+  "wait_time_seconds": {
+    "min": 22,
+    "max": 28
+  },
+  "vllm_max_num_seqs": 2,
+  "api_inference_slots": 2,
+  "queue_timeout_seconds": 20,
+  "requests": 167,
+  "failures": 0,
+  "failure_rate": 0.0,
+  "throughput_requests_per_second": 0.722421971294602,
+  "routes": {
+    "POST /v1/qa": {
+      "requests": 101,
+      "failures": 0,
+      "average_ms": 44.37342376238148,
+      "median_ms": 35.0,
+      "p95_ms": 69.0,
+      "max_ms": 641.4268999942578,
+      "requests_per_second": 0.43691388683086707
+    },
+    "POST /v1/triage (SFT model)": {
+      "requests": 66,
+      "failures": 0,
+      "average_ms": 8505.406490909305,
+      "median_ms": 8400.0,
+      "p95_ms": 15000.0,
+      "max_ms": 14972.034799997346,
+      "requests_per_second": 0.2855080844637349
+    },
+    "POST /v1/triage (fallback)": {
+      "requests": 0,
+      "failures": 0
+    }
+  },
+  "triage_model_share": 1.0,
+  "triage_fallback_share": 0.0,
+  "interpretation": "After restarting the Compose stack, a clean 20-user, four-minute run completed with all 66 triage requests served by the SFT model and no fallback responses or HTTP failures. Triage p95 latency was 15 seconds and max was 14.97 seconds; QA p95 was 69 ms. This is a local prototype sample, not production capacity certification.",
+  "artifacts": [
+    "evals/results/locust_multiuser_stats.csv",
+    "evals/results/locust_multiuser_stats_history.csv",
+    "evals/results/locust_multiuser_failures.csv",
+    "evals/results/locust_multiuser_exceptions.csv",
+    "evals/results/locust_multiuser.html"
+  ]
+}

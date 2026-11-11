@@ -1,0 +1,251 @@
+{
+  "examples": 20,
+  "answer_exact_support_rate": 0.95,
+  "expected_citation_rate": 0.95,
+  "joint_answer_and_citation_rate": 0.95,
+  "refusal_count": 0,
+  "http_error_count": 0,
+  "metric_note": "Exact normalized reference-answer match and expected document citation; fictional synthetic corpus, not human acceptance evidence.",
+  "per_example": [
+    {
+      "question": "Where in the console does the Accounts guide send me to change a setting?",
+      "expected_document_id": "accounts-configuration-02",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Accounts**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "accounts-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which page should I open after choosing Api to review configuration options?",
+      "expected_document_id": "api-configuration-02",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Api**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "api-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "How do I navigate to the Billing limits page in the workspace console?",
+      "expected_document_id": "billing-limits-04",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Billing**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "billing-limits-04"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "After selecting Admin, what section does the permissions guide say to open?",
+      "expected_document_id": "admin-permissions-05",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Admin**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "admin-permissions-05"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where should I go in the console to find Analytics troubleshooting guidance?",
+      "expected_document_id": "analytics-troubleshooting-03",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Analytics**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "analytics-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "What console section is used for the Automation getting started guide?",
+      "expected_document_id": "automation-getting-started-01",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Automation**, then select **Getting Started**.",
+      "refused": false,
+      "citations": [
+        "automation-getting-started-01"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which menu path opens Integrations configuration?",
+      "expected_document_id": "integrations-configuration-02",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Integrations**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "integrations-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "In the Mobile guide, which console section covers permissions?",
+      "expected_document_id": "mobile-permissions-05",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Mobile**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "mobile-permissions-05"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which section should I select for Security troubleshooting?",
+      "expected_document_id": "security-troubleshooting-03",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Security**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "security-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "How do I get to Workspace limits from the console?",
+      "expected_document_id": "workspace-limits-04",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Workspace**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "workspace-limits-04"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where is the Accounts troubleshooting page in the console menu?",
+      "expected_document_id": "accounts-troubleshooting-03",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Accounts**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "accounts-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "What section follows Api in the workspace console when reviewing access permissions?",
+      "expected_document_id": "api-permissions-05",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Api**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "api-permissions-05"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which Billing page should I select for the getting started instructions?",
+      "expected_document_id": "billing-getting-started-01",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Billing**, then select **Getting Started**.",
+      "refused": false,
+      "citations": [
+        "billing-getting-started-01"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where in the Admin menu are the documented limits?",
+      "expected_document_id": "admin-limits-04",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Admin**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "admin-limits-04"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "How can I navigate to Analytics configuration in the workspace console?",
+      "expected_document_id": "analytics-configuration-02",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Analytics**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "analytics-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which console section contains Automation permission settings?",
+      "expected_document_id": "automation-permissions-05",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Automation**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "automation-configuration-02"
+      ],
+      "answer_match": false,
+      "citation_match": false
+    },
+    {
+      "question": "Where does the guide direct me for Integrations troubleshooting?",
+      "expected_document_id": "integrations-troubleshooting-03",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Integrations**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "integrations-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "What is the console path to the Mobile limits guide?",
+      "expected_document_id": "mobile-limits-04",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Mobile**, then select **Limits**.",
+      "refused": false,
+      "citations": [
+        "mobile-limits-04"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "After I choose Security, which console page is for configuration?",
+      "expected_document_id": "security-configuration-02",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Security**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "security-configuration-02"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Which Workspace section should I open to follow its getting started guide?",
+      "expected_document_id": "workspace-getting-started-01",
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Workspace**, then select **Getting Started**.",
+      "refused": false,
+      "citations": [
+        "workspace-getting-started-01"
+      ],
+      "answer_match": true,
+      "citation_match": true
+    }
+  ]
+}

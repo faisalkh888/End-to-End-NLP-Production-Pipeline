@@ -1,0 +1,117 @@
+{
+  "examples": 6,
+  "answer_exact_support_rate": 1.0,
+  "expected_citation_rate": 1.0,
+  "exact_document_id_rate": 0.8333333333333334,
+  "joint_answer_and_citation_rate": 1.0,
+  "refusal_count": 0,
+  "http_error_count": 0,
+  "metric_note": "Exact normalized reference-answer match; citation may match an explicitly allowed equivalent source page. Exact document-ID rate is reported separately. Synthetic corpus, not human acceptance evidence.",
+  "per_example": [
+    {
+      "question": "If I need to modify an Accounts setting, where should I navigate?",
+      "expected_document_id": "accounts-configuration-02",
+      "acceptable_document_ids": [
+        "accounts-configuration-02"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Accounts**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "accounts-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where can I go in Analytics to work through a problem?",
+      "expected_document_id": "analytics-troubleshooting-03",
+      "acceptable_document_ids": [
+        "analytics-troubleshooting-03"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Analytics**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "analytics-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "What console area is used to diagnose a Security issue?",
+      "expected_document_id": "security-troubleshooting-03",
+      "acceptable_document_ids": [
+        "security-troubleshooting-03"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Security**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "security-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where are Analytics setup options found?",
+      "expected_document_id": "analytics-configuration-02",
+      "acceptable_document_ids": [
+        "analytics-configuration-02"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Analytics**, then select **Configuration**.",
+      "refused": false,
+      "citations": [
+        "analytics-configuration-02"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    },
+    {
+      "question": "Where should I go to troubleshoot an API issue?",
+      "expected_document_id": "api-troubleshooting-08",
+      "acceptable_document_ids": [
+        "api-troubleshooting-03",
+        "api-troubleshooting-08",
+        "api-troubleshooting-13",
+        "api-troubleshooting-18",
+        "api-troubleshooting-23",
+        "api-troubleshooting-28",
+        "api-troubleshooting-33",
+        "api-troubleshooting-38",
+        "api-troubleshooting-43",
+        "api-troubleshooting-48"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Api**, then select **Troubleshooting**.",
+      "refused": false,
+      "citations": [
+        "api-troubleshooting-03"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": false,
+      "citation_match": true
+    },
+    {
+      "question": "Which console section contains Automation permission settings?",
+      "expected_document_id": "automation-permissions-05",
+      "acceptable_document_ids": [
+        "automation-permissions-05"
+      ],
+      "http_status": 200,
+      "answer": "Open the workspace console, choose **Automation**, then select **Permissions**.",
+      "refused": false,
+      "citations": [
+        "automation-permissions-05"
+      ],
+      "answer_match": true,
+      "exact_document_id_match": true,
+      "citation_match": true
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "date": "2026-11-11",
+  "status": "completed",
+  "endpoint": "http://localhost:8000",
+  "model_version": "atlas-triage-sft",
+  "locust_version": "2.47.0",
+  "configured_users": 20,
+  "spawn_rate_users_per_second": 2,
+  "duration_seconds": 240,
+  "wait_time_seconds": {
+    "min": 22,
+    "max": 28
+  },
+  "api_rate_limit_per_minute": 60,
+  "requests": 111,
+  "failures": 23,
+  "failure_rate": 0.2072072072,
+  "throughput_requests_per_second": 0.4650337653,
+  "aggregate": {
+    "average_ms": 15200.41,
+    "median_ms": 52,
+    "p95_ms": 45000,
+    "max_ms": 45067.25
+  },
+  "routes": {
+    "POST /v1/qa": {
+      "requests": 68,
+      "failures": 0,
+      "average_ms": 42.58,
+      "median_ms": 39,
+      "p95_ms": 68,
+      "max_ms": 79.71,
+      "requests_per_second": 0.2848855499
+    },
+    "POST /v1/triage": {
+      "requests": 43,
+      "failures": 23,
+      "failure_rate": 0.5348837209,
+      "average_ms": 39170.93,
+      "median_ms": 45000,
+      "p95_ms": 45000,
+      "max_ms": 45067.25,
+      "requests_per_second": 0.1801482154
+    }
+  },
+  "failure_cause": "All 23 recorded failures were POST /v1/triage HTTP 500s caused by httpx.ReadTimeout at the API-to-vLLM 45-second timeout. No QA failures, Locust exceptions, or rate-limit 429s were recorded.",
+  "interpretation": "The complete 20-user run demonstrates the current triage serving path is not stable at this concurrency. The configured vLLM max-num-seqs is 1; queued generation is a likely contributor to the timeouts. QA remained fast. This is one local stress run, not a production capacity estimate.",
+  "privacy_observation": "vLLM INFO logs during the run include the model prompt text. Requests were synthetic; avoid real customer data until prompt logging is disabled or appropriately redacted.",
+  "artifacts": [
+    "evals/results/locust_multiuser_stats.csv",
+    "evals/results/locust_multiuser_stats_history.csv",
+    "evals/results/locust_multiuser_failures.csv",
+    "evals/results/locust_multiuser_exceptions.csv"
+  ]
+}

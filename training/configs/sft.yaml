@@ -1,0 +1,13 @@
+base_model: Qwen/Qwen2.5-3B-Instruct
+dataset: data/processed/triage_sft.jsonl
+output_dir: models/triage-sft
+epochs: 2
+learning_rate: 0.0002
+max_seq_length: 2048
+load_in_4bit: true
+compute_dtype: float16
+lora:
+  r: 16
+  alpha: 32
+  dropout: 0.05
+  target_modules: [q_proj, k_proj, v_proj, o_proj, gate_proj, up_proj, down_proj]
